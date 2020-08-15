@@ -35,8 +35,6 @@ function myFunction() {
           }
         }
       }
-
-// }
 // function myCakes(){
 //     var value = document.querySelectorAll('.cupcakes, .doughnuts');
 //     value.forEach(element=>{
