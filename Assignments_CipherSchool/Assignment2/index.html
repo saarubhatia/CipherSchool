@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SB Store</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <link href="./fontawesome-free-5.12.0-web/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Satisfy&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles.css">
+    <script type="text/javascript" defer src="./script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 ">
+                <h1 style="font-family: 'Pacifico', cursive;">Welcome to SB Store</h1>
+            </div>
+            <div class="col-md-12 col-sm-12 col-auto col-auto buttons">
+                <button type="button" id="cakes" class="btn btn-outline-primary btn-lg" >Cakes</button>
+                <button type="button" id="doughnuts" class="btn btn-outline-primary btn-lg" >Doughnuts</button>
+                <button type="button" id="cupcakes" class="btn btn-outline-primary btn-lg" >Cup Cakes</button>
+                <button type="button" id="all" class="btn btn-outline-primary btn-lg" >All</button>
+            </div>
+            <div class="col-md-12">
+                <div class="input-group mx-auto mb-4 mt-2">
+                    <input type="text" class="form-control search col-md-6" placeholder="Search for a dessert"
+                        aria-label="Recipient's username" aria-describedby="basic-addon2" onkeyup="myFunction()">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-danger" type="button"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-settings cupcakes">
+                <div class="card">
+                    <img class="card-img-top"
+                        src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h2 class="card-text  float-left">Cup Cake</p>
+                            <h2 class="float-right"> $5</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-settings doughnuts">
+                <div class="card">
+                    <img class="card-img-top"
+                        src="https://images.unsplash.com/photo-1514517521153-1be72277b32f?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h2 class="card-text  float-left">Doughnut</p>
+                            <h2 class="float-right"> $3</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-settings cakes">
+                <div class="card">
+                    <img class="card-img-top"
+                        src="https://images.unsplash.com/photo-1516054575922-f0b8eeadec1a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h2 class="card-text  float-left">Cake</p>
+                            <h2 class="float-right"> $7</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-settings cakes ">
+                <div class="card">
+                    <img class="card-img-top"
+                        src="https://images.unsplash.com/photo-1562023692-9283c11284bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h2 class="card-text  float-left">Cake</p>
+                            <h2 class="float-right"> $8</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-settings cupcakes">
+                <div class="card">
+                    <img class="card-img-top"
+                        src="https://images.unsplash.com/photo-1565320095022-b810fe4b51ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h2 class="card-text  float-left">Cup Cake</p>
+                            <h2 class="float-right"> $2</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-settings doughnuts">
+                <div class="card">
+                    <img class="card-img-top"
+                        src="https://images.unsplash.com/photo-1509665653475-295f17f738e6?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h2 class="card-text  float-left">Doughnut</p>
+                            <h2 class="float-right"> $4</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

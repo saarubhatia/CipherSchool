@@ -1,0 +1,35 @@
+body{
+    padding:0;
+    height: 100%;
+    width: 100%;
+    margin-top: 3%;
+}
+.row{
+    text-align: center;
+}
+.btn-lg{
+    margin-top: 2%;
+    margin-right: 4%;
+    margin-bottom: 2%;
+}
+@media (min-width: 768px) {
+.search{
+    margin-left: 20%;
+}}
+@media (min-width: 750px) {
+    .col-settings{
+        margin-bottom: -10%;
+    }}
+@media (max-width: 550px) {
+        .col-settings{
+            margin-bottom: -40%;
+        }}
+.card{
+    height:65%;
+}
+.card-img-top{
+    height:80%;
+}
+.card-body{
+    font-family: 'Satisfy', cursive;
+}
