@@ -24,8 +24,19 @@ class App extends React.Component {
         courseDetails
      })
    }
-   handleDelete=(st)=>{
+   handleDelete=(id)=>{
+     const data= this.state.courseDetails.filter((element)=> element.id!==id)
 
+     this.setState({
+       courseDetails:data
+     })
+
+    let data= this.state.courseDetails.filter((element)=>{
+        return element.id!=id;
+    })
+    this.setState({
+      courseDetails:data
+    })
    }
    
 

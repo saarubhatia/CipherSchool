@@ -1,19 +1,13 @@
-import React  from 'react';
+import React from 'react';
 import './display.css';
 import Loading from './Loading';
-import { Component } from 'react';
-class Display extends React.Component{
 
+const Display = ({courseDetails,handleDelete}) => {
 
-    handledelete(item){
-        const data = this.props.data.filter(i => i.id !== item.id)
-        this.setState({data})
-      }
     // const courseDetails = props.courseDetails;
 
     // Conditional Rendering    {condition ? () : ()}
-
-     courseList = courseDetails.length ? courseDetails.map( (element) => {
+    const courseList = courseDetails.length ? courseDetails.map( (element) => {
         // Object Destructuring
         // const title = element.title;
         // const id = element.id;
@@ -24,17 +18,16 @@ class Display extends React.Component{
                 <h3>Course Name: {title} </h3>
                 <p>Details: {details}</p>
                 <p>Instructor:<i>{instructor}</i></p>
-                <span>{element.name}</span> <button onClick={this.delete.bind(this, element)}>Delete</button>
+                <button onClick={()=>{handleDelete(id)}}>Delete</button>
            </div>        
         )
     }) : ( <Loading />)
- render(){
+
     return(
          <div className='course-display'>
             {courseList} 
         </div>     
     );
-    }
 }
 
 export default Display;
