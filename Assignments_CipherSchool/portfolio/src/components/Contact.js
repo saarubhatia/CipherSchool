@@ -3,6 +3,8 @@ import { Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons"
 
+//~~ Get in touch with me ~~
+
 const Contact = () => {
     return (
         <div className="container center">

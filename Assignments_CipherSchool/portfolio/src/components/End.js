@@ -4,6 +4,8 @@ import { Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 
+//~~~ BUTTON for contacting me ~~~~ 
+
 const End = (props) => {
 
     return (

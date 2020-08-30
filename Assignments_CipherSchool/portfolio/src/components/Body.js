@@ -1,5 +1,7 @@
 import React from 'react';
 import './Body.css';
+
+//  ~~ PORTFOLIO CARDS / HOME PAGE ~~
 const Body = (props) => {
     const portfolioList = props.portfolioDetails.length ? (
         props.portfolioDetails.map(portfolio => {
