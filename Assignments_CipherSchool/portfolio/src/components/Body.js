@@ -20,10 +20,11 @@ const Body = (props) => {
                 </div>
             )
         })
-    ) : (<p className='center'> No Portfolios yet....</p>)
+    ) : (<p className='center'> Projects in making</p>)
     return (
         <div className='container center portfolios'>
-            <h3>Portfolios</h3>
+            <h1 style={{'fontWeight': '500%'}}>PORTFOLIO</h1>
+            <p className="lead">Check out my latest projects</p>
             <div className="row">
                 {portfolioList}
             </div>
